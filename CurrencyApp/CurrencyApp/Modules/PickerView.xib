@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerView" customModule="CurrencyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="Wft-sQ-15F" id="Udc-kN-6n0"/>
+                <outlet property="btnChoose" destination="QJO-da-Mgh" id="tPL-lY-i9Q"/>
+                <outlet property="datePicker" destination="bxh-Hf-7Vn" id="2CW-3f-NDd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-xv-2fg">
+                    <rect key="frame" x="10" y="10" width="394" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wft-sQ-15F">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="40"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJO-da-Mgh">
+                            <rect key="frame" x="212" y="0.0" width="182" height="40"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FOS-x0-RES"/>
+                    </constraints>
+                </stackView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-Hf-7Vn">
+                    <rect key="frame" x="10" y="60" width="414" height="230"/>
+                </datePicker>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QtT-xv-2fg" secondAttribute="trailing" constant="10" id="4Xl-uD-UKc"/>
+                <constraint firstItem="QtT-xv-2fg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="8IT-ne-aap"/>
+                <constraint firstItem="bxh-Hf-7Vn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="10" id="Ch6-GM-YlJ"/>
+                <constraint firstItem="QtT-xv-2fg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Dwx-4u-VKr"/>
+                <constraint firstItem="bxh-Hf-7Vn" firstAttribute="top" secondItem="QtT-xv-2fg" secondAttribute="bottom" constant="10" id="G7E-9R-FDZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bxh-Hf-7Vn" secondAttribute="bottom" constant="10" id="dgX-Ww-zN0"/>
+                <constraint firstItem="bxh-Hf-7Vn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="zbJ-Hf-K4j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
